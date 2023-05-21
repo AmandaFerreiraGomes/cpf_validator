@@ -75,7 +75,7 @@ def create_mask(doc_num: str) -> str:
 
 def remove_mask(doc_num: str) -> str:
     """Remove os caracteres '.' e '-'.
-    
+
     Args:
         - doc_num (str): string com os números do documento.
     Returns:
