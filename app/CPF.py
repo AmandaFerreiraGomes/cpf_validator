@@ -39,11 +39,11 @@ def have_mask(doc_num: str) -> bool:
     tam_string: int = len(doc_num)
     if tam_string == 11:
         cpf_pattern_2: str = '[0-9]{11}'
-        validate_2: bool = re.findall(string=doc_num,pattern=cpf_pattern_2)
+        validate_2: list = re.findall(string=doc_num,pattern=cpf_pattern_2)
         return False
     elif tam_string == 14:
         cpf_pattern_1: str = '[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}'
-        validate_1: bool = re.findall(string=doc_num,pattern=cpf_pattern_1)
+        validate_1: list = re.findall(string=doc_num,pattern=cpf_pattern_1)
         return True
 
 
@@ -69,7 +69,7 @@ def create_mask(doc_num: str) -> str:
         Exemplo: 012.345.678-90 
     """
     if not have_mask(doc_num):
-        doc_num = f'{doc_num[:3]}.{doc_num[3:6]}.{doc_num[6:9]}-{doc_num[9:]}'
+        doc_num: str = f'{doc_num[:3]}.{doc_num[3:6]}.{doc_num[6:9]}-{doc_num[9:]}'
     return doc_num
 
 
