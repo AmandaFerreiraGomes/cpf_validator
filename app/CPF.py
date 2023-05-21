@@ -9,7 +9,7 @@ def validate_input_doc_num(doc_num: str) -> str:
     Returns:
         doc_num (str): string caso o número do documento seja válido.
     """
-    if type(doc_num) != str:
+    if isinstance(doc_num, str):
         raise TypeError('O CPF deve ser do tipo string, contendo 11 dígitos numéricos!')
     else:
         pattern: bool = have_mask(doc_num)
