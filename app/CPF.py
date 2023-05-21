@@ -3,8 +3,11 @@ import re
 def validate_input_doc_num(doc_num: str) -> str:
     """
     Valida a entrada do documento.
-    :param doc_num: string que contém o número do documento.
-    :return: string caso o número do documento seja válido.
+
+    Args:
+        doc_num (str): string que contém o número do documento.
+    Returns:
+        doc_num (str): string caso o número do documento seja válido.
     """
     if type(doc_num) != str:
         raise TypeError('O CPF deve ser do tipo string, contendo 11 dígitos numéricos!')
