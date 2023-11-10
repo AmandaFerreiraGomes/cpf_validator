@@ -1,6 +1,7 @@
 NAME
     CPF
 
+
 FUNCTIONS
     create_mask(doc_num: str) -> str
         Cria a máscara no formato ___.___.___-__.
@@ -27,7 +28,8 @@ FUNCTIONS
         
         Returns:
             (str): string com os números apenas, sem a máscara.
-    
+
+
     repeated_digits(doc_num: str) -> bool
         Verifica se o documento informado contém apenas dígitos repetidos.
         
