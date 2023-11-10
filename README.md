@@ -1,6 +1,7 @@
 NAME
     CPF
 
+
 FUNCTIONS
     create_mask(doc_num: str) -> str
         Cria a máscara no formato ___.___.___-__.
