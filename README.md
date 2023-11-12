@@ -1,11 +1,10 @@
+## DOCUMENTAÇÃO:
+
+### documentação gerada por uma library python.
 NAME
     CPF
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/main
 FUNCTIONS
     create_mask(doc_num: str) -> str
         Cria a máscara no formato ___.___.___-__.
